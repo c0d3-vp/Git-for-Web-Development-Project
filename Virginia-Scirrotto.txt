@@ -1,2 +1,159 @@
 https://codepen.io/c0d3vp/pen/bGpbvoM?editors=1100
 
+    1. What is Semantic HTML?
+It's a way to describe the meaning of an element or tag to the developer or the user.  For example, <p> notates a paragraph, which is easy to understand why it's a ‘p'.
+
+    2. What is HTML used for? 
+It's a language to add content to a web page to be viewed in a browser.
+
+    3. What is an attribute and where do we put it? 
+Attributes are tags that give additional information or modify an element.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+h1 elements are title elements of prominence in a page.  It should only be used once.
+
+    5. Name two tags that have required attributes
+'a' and ‘img'
+
+    6. What do we put in the head of our HTML document? 
+<head>
+  <title>Title of the document</title>
+</head>
+
+    7. What is an id? 
+It's an attribute that gives a unique id to the element in html.  Normally used to style in CSS or manipulate in JS.
+
+    8. What elements can I add an id to? 
+id's can be used in any and all html elements.
+
+    9. How many times can I use the same id on a page? 
+You can only use an id once on the page
+
+    10. What is a class? 
+ A class is a HTML attribute that allows you to select one or multiple elements and style it in CSS
+
+    11. What elements can I add a class to? 
+Class elements can be used in any and all html elements
+
+    12. How many times can I use the same class on a page? 
+There are no limitations to how many times.
+
+    13. How do I get my link to open in a new tab?
+Add target="_blank" to the <a href>. Example:     <a href="http://facebook.com" target=“_blank"></a>
+
+    14. What is the alt attribute in the image tag used for? 
+The alt attribute specifies a text (caption) for the image used.
+
+    15. How do I reference an id?
+ids are referenced by the (#) character
+
+    16. What is the difference between a section and a div
+Sections define, well, sections, like header, footer.  Divs define divisions within the sections.
+
+    17. What is CSS used for? 
+CSS is used to beautify the HTML code.  It adds style to HTML context.
+
+    18. How to we select an element? Example - every h2 on the page
+h2 {
+};
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+A class is used to select/identify multiple elements.  An id is used to select/identify only one element.
+
+    20. How do we select classes in CSS?
+Classes are selected by (.) and class name.
+
+    21. How do we select a p element with a single class of “human”?
+p.human {
+};
+
+    22. What is a parent child selector? When would this be useful? 
+A parent child selector selects all elements that are a direct child of a specific element. It’s useful when you further have to change one element inside the entire selector.
+
+    23. How do you select all links within a div with the class of sidebar?
+.sidebar a {
+}
+
+    24. What is a pseudo selector?
+It’s a selector that selects items that are in one state, like a click or a hover.
+
+    25. What do we use the change the spacing between lines?
+line-height: (add value);
+
+    26. What do we use to change the spacing between letters?
+letter-spacing: (add value);
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+  text-transform: capitalize;
+  text-transform: uppercase;
+  text-transform: lowercase;
+
+    28. How do I add a 1px border around my div that is dotted and black?
+ {
+border: 1px dotted #000000;
+}
+
+    29. How do I select everything on the page? 
+* {
+}
+    30. How do I write a comment in CSS?
+/* write comment */
+
+    31. How do I find out what file I am in, when I am using the command line? 
+pwd
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+rm file name.  Be careful because it deletes forever and there is no warning or “are you sure” alerts. rm cannot be undone. 
+
+    34. Why should I use version control? 
+Helps solving problems, and helps concurrent work from conflicting with multiple files and collaboration. Fix what is wrong, versus having to re-do the entire file.
+
+    35. How often should I commit to github?
+Once changes are done.  Makes sure to do it often.
+
+    36. What is the command we would use to push our repo up to github? 
+It’s git push -u origin “file name”. After the initial push with origin, you only have to do git push -u.
+
+    37. Walk me through Lambda's git flow. 
+1. you fork the repo
+2. you add your TL as a collaborator
+3. you clone the repo
+4. you branch the epo with your name
+5. you do your work
+6. You add / commit changes to the branch while leaving messages
+7. You push the repo back to GitHub
+8. You submit a pull request (after confirming you are changing your branch)
+9. You add your TL as a reviewer and submit.
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+A block element always starts and maintain its own like.  An inline element never creates a new line, and stays within the given width.
+
+    2. What happens when an element is positioned absolutely? 
+The element is no longer exists with the entire document.  It creates a layer for it’s own positions.
+    
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+Apply a “flex” property to the element.
+
+    4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+Display block:
+<p>
+<div>
+<h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+Display inline:
+<a>
+<span>
+Display in-line:
+1. <img>
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+The box model is essentially a “box”/container that wraps itself around each element of HTML.  Consists of margins, borders, padding and content (information).  To fix it, add”
+{
+box-sizing: border-box;
+}
+
